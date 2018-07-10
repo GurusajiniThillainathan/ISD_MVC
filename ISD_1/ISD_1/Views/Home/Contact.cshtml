@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+
+        <div ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1">
+            <span style="font-size: x-large">
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp; <img id="Image1" src="~/Content/Images/callph.png" width="80"/>
+                &nbsp;
+                1234567890&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img id="Image2" src="~/Content/Images/visit.png" style="margin-right: 0px" Width="78" />
+                &nbsp;<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.075037119482!2d-1.502385984275773!3d52.40531625247459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48774bb803de8111%3A0x532d1678b86680d6!2sUnnamed+Road%2C+Coventry+CV1+5DD!5e0!3m2!1sen!2suk!4v1530714702998" width="600" height="450" frameborder="0" style="border: 0" allowfullscreen></iframe>
+                <br />
+                <br />
+            </span>
+
+            <span style="font-size: large">
+                &nbsp;&nbsp;&nbsp;&nbsp; CONTACT US FORM<br />
+               @* <ValidationSummary ID="ValidationSummary1" ForeColor="#CC3300" HeaderText="Please fix the errors" />*@
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <TextBox ID="TextBox3"></TextBox>
+              @*  <RequiredFieldValidator ID="nameValidator1" ControlToValidate="TextBox3" ErrorMessage="Name is required" ForeColor="#CC3300">*</RequiredFieldValidator>*@
+                <br />
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <TextBox ID="TextBox2"></TextBox>
+                @*<RequiredFieldValidator ID="emailValidator1" ControlToValidate="TextBox2" ErrorMessage="Email is required" ForeColor="#CC3300">*</RequiredFieldValidator>
+                <RegularExpressionValidator ID="RegularExpressionValidator1" ControlToValidate="TextBox2" ErrorMessage="Invalid email format" ForeColor="#CC3300" ToolTip="Invalid email format" ValidationExpression="{\w+([-+.']\w+)*-.]\w+)*\.\w+([-.]\w+)*}">*</RegularExpressionValidator>*@
+                <br />
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Subject:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <TextBox ID="TextBox5"></TextBox>
+               @* <RequiredFieldValidator ID="SubjValidator1" ControlToValidate="TextBox5" ErrorMessage="Subject is required" ForeColor="#CC3300">*</RequiredFieldValidator>*@
+                <br />
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Message:&nbsp;&nbsp;&nbsp;
+                <TextBox ID="TextBox4"></TextBox>
+                <br />
+                <Label ID="Label1"></Label>
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Button ID="submitButton" Text="Submit" OnClick="Button4_click" />
+                <br />
+                <br />
+            </span>
+
+            <span style="font-size: x-large">
+                <br />
+                <br />
+                &nbsp;<br />
+            </span>
+        </div>
